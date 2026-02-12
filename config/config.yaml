@@ -218,7 +218,7 @@ display:
   #   - AI 分析：由 ai.include_standalone 开关控制，将完整数据送入 AI 做深度分析
   # 两者共享此处的平台/RSS 配置，但开关互相独立（可只开 AI 分析、不推送展示）
   standalone:
-    platforms: ["zhihu", "wallstreetcn-hot"]     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    platforms: ["zhihu","wallstreetcn-hot","cls-hot"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
     rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
@@ -353,7 +353,7 @@ ai:
   
   model: "deepseek/deepseek-chat"
 
-  api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
+  api_key: "sk-3f33a6d8de6847bc963e355bff181b45"                       # API Key（建议使用环境变量 AI_API_KEY）
   
   api_base: ""                      # 自定义 API 端点（可选，大多数情况留空）
                                     # 示例: https://api.openai.com/v1（自建代理或兼容接口）
